@@ -1,0 +1,23 @@
+<div id="wrapper">
+    <nav class="navbar nav-pills navbar-expand-sm navbar-dark flex-column flex-sm-row py-4">
+        <button class="navbar-toggler navbar-toggler ms-auto me-3"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+            <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="./index.html">Strona główna</a>
+            <a class="flex-sm-fill text-sm-center nav-link" routerLink="rzym">Rzym</a>
+            <a class="flex-sm-fill text-sm-center nav-link" routerLink="paryz">Paryż</a>
+            <a class="flex-sm-fill text-sm-center nav-link" routerLink="londyn">Londyn</a>
+            <a class="flex-sm-fill text-sm-center nav-link" routerLink="galeria">Galeria</a>
+            <a class="flex-sm-fill text-sm-center nav-link" routerLink="kontakt">Kontakt</a>
+        </div>
+    </nav>
+    <router-outlet></router-outlet>
+    <footer></footer>
+</div>

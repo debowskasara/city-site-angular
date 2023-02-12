@@ -1,0 +1,88 @@
+<div class="container-fluid mt-5">
+  <div class="offset-lg-1 col-lg-11 mt-5">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="fs-5 fw-bold">Kontakt z nami</p>
+      </div>
+    </div>
+    <div class="row mt-3 text-center">
+      <div class="col-lg-3">
+        <p class="fs-6 fw-bold">Sara Dębowska</p>
+      </div>
+      <div class="col-lg-3">
+        <p class="fs-6">
+          <span class="fw-bold">Adres</span>
+          : ul. Polna 56, 04-444 Warszawa
+        </p>
+      </div>
+      <div class="col-lg-3">
+        <p class="fs-6">
+          <span class="fw-bold">Numer telefonu</span>
+          : +48 601 595 000
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="offset-lg-1 col-lg-11 mt-3">
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="fs-5 fw-bold">Masz pytania?</p>
+        <p class="fs-6">Skorzystaj z formularza poniżej.</p>
+      </div>
+    </div>
+    <form [formGroup]="form">
+      <div class="row my-3">
+        <div class="col-lg-3 col-12 ml-3">
+          <label for="name" class="labels no-margin">Imię i nazwisko
+            <span
+              style="color: red;">*</span>
+          </label>
+          <input id="name"
+                 class="w-100 px-2"
+                 name="name"
+                 placeholder="Wpisz imię i nazwisko"
+                 formControlName="name"
+                 required>
+          <label for="email" class="labels no-margin mt-lg-3">Adres email
+            <span
+              style="color: red;">*</span>
+          </label>
+          <input id="email"
+                 class="w-100 px-2"
+                 name="email"
+                 placeholder="Wpisz adres email"
+                 formControlName="email"
+                 required>
+        </div>
+        <div class="col-lg-7 col-12">
+          <label for="subject" class="labels no-margin">Temat</label>
+          <input id="subject"
+                 class="w-100 px-2"
+                 name="subject"
+                 formControlName="subject"
+                 placeholder="Wpisz temat wiadomości">
+          <label for="content" class="labels no-margin mt-lg-3">Teść wiadomości</label>
+          <textarea id="content"
+                    class="w-100"
+                    name="content"
+                    (keyup)="textareaLengthCheck()"
+                    formControlName="content"
+                    placeholder="Wpisz treść wiadomości" maxlength="250"></textarea>
+          <small id="elementLeft" class="form-text text-muted text-end text-small labels"></small>
+          <button class="send-button mt-3 mt-lg-2" type="submit" (click)="onSubmit()">Wyślij <img
+            src="../assets/img/arrow_forward.svg"/></button>
+        </div>
+      </div>
+    </form>
+
+    <div class="row">
+      <div class="col-lg-10 col-12 my-5">
+        <p class="fs-5 fw-bold mb-4">Nasza lokalizacja</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d726.6969871254549!2d21.012100605808957!3d52.219629713323215!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecce8dc18a117%3A0xfcf7921a0c7d050d!2sPolna%2056%2C%2000-622%20Warszawa!5e0!3m2!1spl!2spl!4v1642027170444!5m2!1spl!2spl"
+                class="iframe-google w-100 h-100"
+                allowfullscreen=""
+                loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

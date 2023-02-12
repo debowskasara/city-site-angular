@@ -1,0 +1,135 @@
+:root {
+  --primary: #3f51b5;
+  --secondary: white;
+  --primary-dark: #313163;
+  --primary-light: #324191;
+}
+
+html, body, #wrapper {
+  height: 100%;
+}
+
+.navbar {
+  background-color: var(--primary);
+  box-shadow: 0 3px 5px -1px #0003, 0 6px 10px #00000024, 0 1px 18px #0000001f;
+}
+
+.nav-link {
+  color: var(--secondary);
+}
+
+.nav-link:hover {
+  color: var(--secondary);
+  background-color: var(--primary-dark);
+}
+
+.nav-link:focus {
+  color: var(--secondary);
+}
+
+.nav-pills .nav-link.active {
+  background-color: var(--primary-light) !important;
+  color: var(--secondary);
+  font-weight: bold;
+}
+
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+}
+
+.background-img {
+  background: transparent url(./assets/img/paryzlondynrzym2.jpg) no-repeat fixed top;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 8vw;
+  object-fit: cover;
+}
+
+.main-text {
+  margin-top: 15%;
+  margin-bottom: 15%;
+}
+
+.full-container {
+  height: calc(100% - 88px);
+}
+
+.white-font {
+  color: var(--secondary);
+}
+
+.white-background {
+  background-color: #ffffffde;
+}
+
+.no-margin {
+  margin-bottom: 0;
+}
+
+.text-small {
+  font-size: 11px;
+}
+
+/*Rzym*/
+.img-setting {
+  width: 100%;
+}
+
+@media (min-width: 991px) {
+  .img-setting {
+    height: 100%;
+  }
+}
+
+/*Paryz*/
+.transparent-card {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/*Londyn*/
+.main-text-london {
+  margin-top: 10%;
+  margin-bottom: 30%;
+}
+
+.main-information {
+  padding: 5%;
+  background-color: #f4f4fa;
+}
+
+/*Kontakt*/
+.labels {
+  display: block;
+}
+
+textarea {
+  padding: 10px 10px;
+}
+
+.send-button {
+  padding: 0;
+  background: none;
+  border: none;
+}
+.send-button:focus {
+  outline: none
+}
+
+.iframe-google {
+  border: none;
+}
+
+/*Galeria*/
+.example-image {
+  height: 100%;
+  width: 100%;
+}
+
+
+@media (min-width: 768px) {
+  .background-img {
+    background-size: 100% auto;
+  }
+}
