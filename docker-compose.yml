@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  city-site:
+    build:
+      context:
+    ports:
+      - 80:80
+    logging:
+      driver: "json-file"
+      options:
+        max-file: "5"
+        max-size: "10m"
