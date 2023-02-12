@@ -13,7 +13,7 @@ COPY --from=build /app/dist/city-site-angular /usr/share/nginx/html
 
 COPY /nginx.conf /etc/nginx/conf.d/default.conf
 
-RUN chown -R nginx:nginx /user/share/nginx/html && \
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
 chown -R nginx:nginx /var/cache/nginx && \
 chown -R nginx:nginx /var/log/nginx && \
 chown -R nginx:nginx /etc/nginx/conf.d
